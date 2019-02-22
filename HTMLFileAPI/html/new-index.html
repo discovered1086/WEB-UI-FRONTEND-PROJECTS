@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>file_upload</title>
+		<meta name="description" content="">
+		<meta name="author" content="Kingshuk Mukherjee">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var checkIfFileReaderExists = (window.File && window.FileReader);
+
+				if (!checkIfFileReaderExists) {
+					alert("This browser does not support file API..!!");
+					return;
+				}
+			}
+
+
+			$(document).ready(function() {
+
+				init();
+
+				$("#file_upload").on("change", function(event) {
+					//Get the file information from the event
+					//var eventTarget = $(event.target);
+					
+					//console.log(eventTarget);
+
+					//console.log(eventTarget.attr("files"));
+					//var theFile = eventTarget[0].files[0];
+					
+					var theFile = this.files[0];
+					
+					console.log(theFile);
+					
+					//Add the information to the paragraphs
+					$("#file_name").html(theFile.name);
+					$("#file_size").html(theFile.size/1024+" MB");
+					$("#file_type").html(theFile.type);
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>file_upload</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div>
+				<input type="file" name="fileUpload" id="file_upload"/>
+				<p>The file name is <span id="file_name"></span></p>
+				<p>The file size is <span id="file_size"></span></p>
+				<p>The file type is <span id="file_type"></span></p>
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Kingshuk Mukherjee
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

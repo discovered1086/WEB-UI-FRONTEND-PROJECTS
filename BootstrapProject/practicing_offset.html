@@ -1,0 +1,78 @@
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <title>First bootstrap project</title>
+
+
+                    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+                    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+                    <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+                    <script type="text/javascript" src="/js/tether.min.js"></script>
+                    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+                    <script type="text/javascript" src="/js/javascript_main.js"></script>
+
+                </head>
+                <body>
+                <!--row and container are predefined bootstrap classes
+                - A conatiner consists of unlimited rows-->
+
+                <!--Every row consists of columns and every row consists of 12 columns, not one
+                more, not one less-->
+                <!-- Columns can be equal width declared as col, can be auto width declared as col-auto,
+                can be fixed width of number of columns specified by col-<number of columns> ex col-7
+                and then finally columns can also be declared for fixed width along with the break point.
+
+                col -> equal width
+                col-auto -> auto width
+                col-<number of columns> -> fixed width without break point
+                col-<device-size>-<number of columns> -> fixed width with break point
+                The important thing to remember is that different kinds of column declarations can
+                be combined to build a row-->
+
+               <!--Now we're going to use offset to add column-equivalent spaces before and after the columns-->
+               <!--Offset can simply be put as adding column-equivalent space to the left of the element-->
+               <!-- In the below containers the rows and columns mean this
+
+              {<div class="col-md-4 offset-md-2">col-md-4</div>} - 
+               This means that in medium screen sizes and larger, the column will occupy 
+               the width of 4 columns and in medium screen sizes and larger, the column will have a space
+               equivalent to the width of 2 columns (width of columns relative to the parent) to the left of it.
+               
+               {<div class="col-lg-2 offset-lg-2">col-lg-2</div>}- 
+               This means that in large screen sizes and larger, the column will occupy
+               the width of 2 columns and in large screen sizes and larger, the column will have a space
+               equivalent to the width of 2 columns (width of columns relative to the parent) to the left of it. 
+               
+               { <div class="col-sm-6 offset-sm-4">col-sm-6</div>}- 
+               This means that in small screen sizes and larger, the column will occupy
+               the width of 6 columns and in small screen sizes and larger, the column will have a space
+               equivalent to the width of 4 columns (width of columns relative to the parent) to the left of it. -->
+               
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 offset-md-2">col-md-4</div>
+                        <div class="col-md-4 offset-md-2">col-md-4</div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-2 offset-lg-2">col-lg-2</div>
+                        <div class="col-lg-2 offset-lg-2">col-lg-2</div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-sm-6 offset-sm-4">col-sm-6</div>
+                    </div>
+                   </div>
+
+                <div class=container-fluid>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="heading">this is the footer of the page</h1>
+                        </div>
+                    </div>
+                </div>
+                </body>
+                </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>First bootstrap project</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/js/tether.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/javascript_main.js"></script>
+
+</head>
+
+<body>
+    <!--row and container are predefined bootstrap classes
+                            - A conatiner consists of unlimited rows-->
+
+    <!--Every row consists of columns and every row consists of 12 columns, not one
+                            more, not one less-->
+    <!-- Columns can be equal width declared as col, can be auto width declared as col-auto,
+                            can be fixed width of number of columns specified by col-<number of columns> ex col-7
+                            and then finally columns can also be declared for fixed width along with the break point.
+
+                            col -> equal width
+                            col-auto -> auto width
+                            col-<number of columns> -> fixed width without break point
+                            col-<device-size>-<number of columns> -> fixed width with break point
+                            The important thing to remember is that different kinds of column declarations can
+                            be combined to build a row-->
+
+    <!--Here we exercise 4 classes
+    They're very useful when you want to specify how the pages should look
+    when someone is trying to print the page
+    
+    1. visible-print-block says, the content surrounded by this class
+    will only be visible when someone attempts to print the page, and it would appear in a block style
+    
+    2. visible-print-inline says, the content surrounded by this class
+    will only be visiable when the page is attempted to be printed, and it it would appear in
+    inline style
+    
+    3. visible-print-inline-block says, the content surrounded by this class
+    will only be visiable when the page is attempted to be printed, and it it would appear in
+    inline-block style  
+    
+    4.hidden-print says, this content would not be visible when the page is attempted
+    to be printed
+    
+    Here the difference between the block and inline styles aren't visible because I have
+    used paragraphs for all of them but for links, buttons, series of buttons etc, this would
+    make more sense
+    -->
+    <div class="container-fluid">
+        <div class="visible-print-block">
+            <h2>PRINT-VISIBLE-BLOCK</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="visible-print-inline">
+            <h2>PRINT-VISIBLE-INLINE</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="visible-print-inline-block">
+            <h2>PRINT-VISIBLE-INLINE-BLOCK</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="hidden-print">
+            <h2>HIDDEN-PRINT</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

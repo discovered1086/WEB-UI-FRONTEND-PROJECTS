@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>First bootstrap project</title>
+
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+        <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="/js/tether.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/javascript_main.js"></script>
+
+    </head>
+    <body>
+    <!--row and container are predefined bootstrap classes
+    - A conatiner consists of unlimited rows-->
+
+    <!--Every row consists of columns and every row consists of 12 columns, not one
+    more, not one less-->
+    <!-- Columns can be equal width declared as col, can be auto width declared as col-auto,
+    can be fixed width of number of columns specified by col-<number of columns> ex col-7
+    and then finally columns can also be declared for fixed width along with the break point.
+    
+    col -> equal width
+    col-auto -> auto width
+    col-<number of columns> -> fixed width without break point
+    col-<device-size>-<number of columns> -> fixed width with break point
+    The important thing to remember is that different kinds of column declarations can
+    be combined to build a row-->
+    
+    <!-- Now we're going to align the columns within the rows horizontally 
+    by using the flexbox utilities-->
+    <div class="container-fluid">
+        <div class="row justify-content-start no-gutters">
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+        </div>
+        <!-- This is used to jutify the content with respect to the
+        space around them-->
+        <div class="row justify-content-around">
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+        </div>
+        <!-- This is used to jutify the content with respect to the
+        space between them-->
+        <div class="row justify-content-between">
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col-3">
+                <p>This is another test column with equal width</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class=container-fluid>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="heading">this is the footer of the page</h1>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

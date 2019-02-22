@@ -1,0 +1,118 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>First bootstrap project</title>
+
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+        <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="/js/tether.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/javascript_main.js"></script>
+
+    </head>
+    <body>
+    <!--row and container are predefined bootstrap classes
+    - A conatiner consists of unlimited rows-->
+
+    <!--Every row consists of columns and every row consists of 12 columns, not one
+    more, not one less-->
+    <!-- Columns can be equal width declared as col, can be auto width declared as col-auto,
+    can be fixed width of number of columns specified by col-<number of columns> ex col-7
+    and then finally columns can also be declared for fixed width along with the break point.
+    
+    col -> equal width
+    col-auto -> auto width
+    col-<number of columns> -> fixed width without break point
+    col-<device-size>-<number of columns> -> fixed width with break point
+    The important thing to remember is that different kinds of column declarations can
+    be combined to build a row-->
+    <div class="container-fluid">
+        <div class="row">
+           <!--Bootstrap development is done with the smallest device in mind first
+           so the below class declaration will do this
+           
+           - For smallest of devices it'll occupy the full width (because of the column 12) and then
+           as the screen gets bigger, for medium and larger devices they'll occupy quarter of the available width
+           (because of the declaration column 3) -->
+            <div class="col-12 col-md-3">
+                  <h1 class="moto">Bootstrap yoo hooo....!!</h1>
+            </div>
+            
+            
+            <!--<div class="col">
+                <p>This is another test column with equal width</p>
+            </div>
+            
+            - For smallest of devices it'll occupy the half of the available width (because of the column 6) and then
+           as the screen gets bigger, for medium and larger devices they'll occupy quarter of the available width
+           (because of the declaration column 6) -->
+            <div class="col-6 col-md-3">
+                <p>This is another test column with equal width</p>
+            </div>
+            <!--<div class="col-5">
+                  <p>This is another test column with fixed width but without the break point</p>
+            </div>-->
+            <div class="col-6 col-md-3">
+                  <p>This is another test column with fixed width but without the break point</p>
+            </div>
+            <!--<div class="col-sm-3">
+                  <p>This is another test column with fixed width and with the break point</p>
+            </div>-->
+            <div class="col-6 col-md-3">
+                  <p>This is another test column with fixed width and with the break point</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col">
+                <p>This is another test column with equal width</p>
+            </div>
+            <!--If we want equal width columns to span accross rows
+            we use the class w-100 to do that-->
+            <div class="w-100"></div>
+            <div class="col">
+                <p>This is another test column with equal width</p>
+            </div>
+            <div class="col">
+                <p>This is another test column with equal width</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+       <div class="row">
+       <!--lg means large column. Size of the large screens are typically 1200px so the columns will break if the screen
+       size gets smaller than 1200px
+       - md means medium columns. Size of the medium screens are typically 992px so the columns will break if the screen
+       size gets smaller than 992px
+       -sm means small columns. Size of the medium screens are typically 768px so the columns will break if the screen
+       size gets smaller than 768px
+           -xs means extra small columns-->
+        <div class="col-12 col-sm-3">
+                <a href="restraunt_menu.html">  
+                <button type="button" class="btn btn-primary btn-large" >My Menu</button>
+                </a>
+        </div>
+        <div class="col-12 col-sm-9">
+            <h1 class="heading">I'm excited to join this project</h1>
+        </div>
+        </div>
+    </div>
+    <div class=container-fluid>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="heading">this is the footer of the page</h1>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

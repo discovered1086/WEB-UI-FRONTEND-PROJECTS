@@ -1,0 +1,395 @@
+/* 
+    Document   : credential_css
+    Created on : 24 Aug, 2011, 11:54:20 PM
+    Author     : Kingshuk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+html, body {
+    background-color: #90d5be;
+    font-size: small;
+    font-family: /*arial,verdana,sans-serif;*/ Georgia, Times-New-Roman, serif;
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+}
+
+#allcontent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    height: auto;
+    background-color: #C8C8C8;
+    /*box-shadow:0px 0px 10px 5px #585858;*/
+    /*background-image: url('/SmartMoneyPlansDemo/images/background_content.jpg');
+    background-repeat: repeat-y;*/
+
+}
+
+#actual_content {
+    /*padding: 0px 20px 30px 5px;*/
+    padding: 0;
+    /*margin:0px 0px 0px 225px;*/
+    margin-top: 70px;
+    /*height: auto;*/
+    min-height: 200px;
+    background-color: #90d5be;
+    /*background-image: url('/SmartMoneyPlansDemo/images/background2.jpg');
+    background-repeat: no-repeat;*/
+    /*border-right:5px solid;
+    border-color:#C8C8C8;
+    border-collapse:collapse;*/
+}
+
+#content-body {
+    padding: 5px 30px 30px 30px;
+    /*margin:0px 0px 0px 225px;*/
+    margin-left: 275px;
+    /*height: auto;*/
+    min-height: 270px;
+    width: auto;
+    background-color: #90d5be;
+    /*border:5px solid;
+    border-color:#66CD00;
+    border-collapse:collapse;*/
+    /*border-radius:18px;*/
+}
+
+#header {
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+    width: 100%;
+    height: 110px;
+    background-color: #90d5be;
+    /*border-radius:10px;*/
+
+}
+
+#header ul {
+    list-style-type: none;
+    margin: 0px 0px 5px 0px;
+}
+
+#header ul li {
+    padding: 3px 5px 3px 5px;
+    float: right;
+    height: 10px;
+    display: inline;
+}
+
+#header ul li a:link {
+    text-decoration: none;
+    color: #585858;
+    font: 75%;
+    font-weight: normal;
+}
+
+#header ul li a:visited {
+    text-decoration: none;
+    color: #585858;
+    font: 75%;
+    font-weight: normal;
+}
+
+#header ul li a:hover {
+    text-decoration: underline;
+
+}
+
+#header_link {
+    /*position:absolute;
+    right:0px;
+    top:0px;*/
+    float: right;
+    width: 350px;
+    height: 60px;
+    padding: 2px 20px 2px 0px;
+    margin: 0px;
+    background-color: #ADEAEA;
+}
+
+#welcome_message {
+    padding: 25px 0px 5px 0px;
+    color: #388E8E;
+    float: right;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#welcome_message a:link {
+    color: #585858;
+}
+
+#welcome_message a:visited {
+    color: #585858;
+}
+
+h2 {
+    color: #7F3D0C;
+    font-size: 150%;
+    padding: 15px 0px 0px 50px;
+}
+
+.success_notifications {
+    padding: 2px 5px 2px 15px;
+    margin: 10px 50px 20px 0px;
+    height: auto;
+    width: auto;
+    background-color: #90EE90;
+    font-size: 120%;
+    color:#7F3D0C;
+    /*border:5px solid;
+    border-color:#66CD00;
+    border-collapse:collapse;*/
+    /*border-radius:18px;*/
+}
+
+#sidebar {
+    height: auto;
+    width: 220px;
+    float: left;
+    margin: 8px 25px 0 15px;
+    padding: 0px 0px 15px 0px;
+    /*box-shadow: 2px 0px 5px 2px #585858;
+    background-color: #ADEAEA;*/
+}
+
+#menu{
+    margin: 8px 25px 0 15px;
+    padding:10px;
+    box-shadow: 2px 0px 5px 2px #585858;
+    background-color: #ADEAEA;
+
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+}
+
+#menu ul li {
+    /*list-style-type: square;?*/
+
+    padding: 12px;
+    margin: 1px 16px 1px 10px;
+    display: block;
+    border-bottom:1px solid #488214;
+}
+
+#menu ul li a:link {
+/*background-image : url('/SmartMoneyPlansDemo/images/green_arrow.png');*/
+    background-repeat: no-repeat;
+    background-position: left;
+    color: #585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:visited {
+   / background-image: url('/SmartMoneyPlansDemo/images/green_arrow.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    color: #585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    /*background-image: url('/SmartMoneyPlansDemo/images/green_arrow.png');*/
+    background-repeat: no-repeat;
+    background-position: left;
+    text-decoration: underline;
+}
+
+#additional_content{
+    margin: 40px 25px 0 15px;
+    padding:10px;
+    box-shadow: 2px 0px 5px 2px #585858;
+    background-color: white;
+        /*background-color: #ADEAEA;*/
+}
+
+#additional_content p{
+    color: #585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.active {
+    padding: 15px;
+    margin: 5px;
+    background-color: skyblue;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tableinfo {
+    /*border: 2px solid #488214;
+    border-collapse: collapse;*/
+    text-align: center;
+    width: 100%;
+    /*margin-top: 20px;*/
+}
+
+.tableinfo td {
+    padding: 5px;
+    color: #585858;
+    height: 25px;
+    font-weight: bold;
+    font-size:100%;
+    vertical-align: middle;
+    text-align: left;
+
+    /*background-color:#66CD00;*/
+}
+
+.tableinfo th {
+    background-color: #488214;
+    color: white;
+    height: 22px;
+}
+
+#button {
+    background-color: #50A6C2;
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.rightnote {
+    float: right;
+    height: 100%;
+    width: 200px;
+}
+
+.tabledata {
+    /*border: 2px solid #488214;
+    border-collapse: collapse;*/
+    text-align: center;
+    width: 100%;
+}
+
+.tabledata td {
+    padding: 5px;
+    color: #585858;
+    height: 25px;
+    /*font-weight: bold;*/
+    vertical-align: middle;
+    /*border: 1px solid #66CD00;*/
+    font-family: arial;
+    font-weight: normal;
+    font-size: 90%;
+    /*background-color:#66CD00;*/
+}
+
+.tabledata th {
+    background-color: #488214;
+    color: white;
+    height: 22px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#content-body_ul {
+    list-style-type: none;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+    border: 2px solid black;
+}
+
+#content-body_ul li {
+    padding: 12px;
+    margin: 1px 16px 1px 10px;
+    display: block;
+    color: #585858;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#content_within {
+    margin: 8px 8px 8px 38px;
+    border: 2px solid black;
+}
+
+#content_within_ul {
+    list-style-type: none;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+}
+
+#content_within_ul li {
+    padding: 12px;
+    display: block;
+    color: #585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlighted {
+    background-color: yellow;
+    font-style: italic;
+}
+
+.highlighted_green {
+    background-color: green;
+    font-style: italic;
+}
+
+.highlighted_sky_blue {
+    background-color: skyblue;
+    font-style: italic;
+}
+
+.ul_background{
+    background-color: ‎‎ #dacc76;
+}
+
+.output_content{
+    padding: 12px;
+    margin: 15px 15px 15px 0px;
+    color: #585858;
+    border: 2px solid #488214;
+    width: 70%;
+}
+
+.registration_box{
+/*display:none;*/
+    margin-top: 15px;
+    /*width: 100%;*/
+    border-collapse: collapse;
+    border: 2px solid #488214;
+    border-top-width: 15px;
+    height:auto;
+}
+
+.text_area{
+    width: 80%;
+    background-color: white;
+    height:80px;
+    overflow: auto;
+    margin: auto;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>First bootstrap project</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/js/tether.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/javascript_main.js"></script>
+
+</head>
+
+<body>
+    <!--row and container are predefined bootstrap classes
+                            - A conatiner consists of unlimited rows-->
+
+    <!--Every row consists of columns and every row consists of 12 columns, not one
+                            more, not one less-->
+    <!-- Columns can be equal width declared as col, can be auto width declared as col-auto,
+                            can be fixed width of number of columns specified by col-<number of columns> ex col-7
+                            and then finally columns can also be declared for fixed width along with the break point.
+
+                            col -> equal width
+                            col-auto -> auto width
+                            col-<number of columns> -> fixed width without break point
+                            col-<device-size>-<number of columns> -> fixed width with break point
+                            The important thing to remember is that different kinds of column declarations can
+                            be combined to build a row-->
+
+    <!--Now we're going to practice responsive utilities concept which shows and hides contents based on the
+    device sizes-->
+    <!--Now the below method of using the clases with the word down means that if the screen size is smaller
+    than the break point specified, the content will disappear
+    -->
+    <!--<div class="container-fluid">
+        <div class="hidden-xs-down">
+            hidden-xs-down
+        </div>
+        <div class="hidden-sm-down">
+            hidden-sm-down
+        </div>
+        <div class="hidden-md-down">
+            hidden-md-down
+        </div>
+        <div class="hidden-lg-down">
+            hidden-lg-down
+        </div>
+        <div class="hidden-xl-down">
+            hidden-xl-down
+        </div>
+
+        <!--Now the below method of using the clases with the word up means that if the screen size is larger
+    than the break point specified, the content will disappear 
+        <div class="hidden-xs-up">
+            hidden-xs-up
+        </div>
+        <div class="hidden-sm-up">
+            hidden-sm-up
+        </div>
+        <div class="hidden-md-up">
+            hidden-md-up
+        </div>
+        <div class="hidden-lg-up">
+            hidden-lg-up
+        </div>
+        <div class="hidden-xl-up">
+            hidden-xl-up
+        </div>
+    </div>-->
+    <!--One very important this to be noticed here is that it's useless using the below classes
+    1. hidden-xs-up
+    2. hidden-xl-down
+    Because for any screen size it'll always be extra small or larger OR it'll be extra large or smaller
+    -->
+    <!--Now let's use the knowledge above for the media page problem
+    What I want is the inner media paragraph to disappear if the screen size is smaller than small
+    line no 109
+    -->
+    <div class="container-fluid">
+        <div class="media">
+            <img id="roger-image" src="images/roger-federer.jpg" alt="Roger That..!!" class="align-self-start">
+            <div class="media-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Roger Federer is a gift of god</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+
+
+                    <div class="col-sm-6 hidden-md-up">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img id="roger-image" src="images/roger-federer.jpg" alt="Roger That..!!" class="align-self-center">
+                    <div class="media-body hidden-xs-down">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+
+
+
+                            <div class="col-xs-2">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

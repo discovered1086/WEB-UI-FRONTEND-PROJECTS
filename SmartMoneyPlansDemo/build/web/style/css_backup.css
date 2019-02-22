@@ -1,0 +1,170 @@
+/* 
+    Document   : css_backup
+    Created on : 15 Oct, 2011, 1:59:51 AM
+    Author     : Kingshuk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+   height: 125px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+
+#ribbon
+{
+    
+    height:50px;
+    margin: 50px 0px 0px 0px;
+    width:100%;
+    background-color: #488214;
+}
+
+#ribbon h3
+{
+    font-size: 120%;
+    color: white;
+}
+
+#ribbon ul{
+    list-style-type: none;
+    margin: 0px;
+
+}
+
+#ribbon ul li
+{
+    padding:15px 10px 0px 10px;
+    float:right;
+    height: 30px;
+    display:inline;
+}
+
+#ribbon2
+{
+    margin: 0px 0px 0px 0px;
+    height:25px;
+    width:100%;
+    background-color: #66CD00;
+}
+
+#ribbon2 h3
+{
+    font-size: 120%;
+    color: white;
+}
+
+#ribbon2 ul{
+    list-style-type: none;
+    margin: 0px 0px 5px 0px;
+}
+
+#ribbon2 ul li
+{
+    padding:5px 10px 5px 10px;
+    float:right;
+    height: 15px;
+    display:inline;
+}
+
+#ribbon2 ul li a:link
+{
+    color:#585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ribbon2 ul li a:visited
+{
+    color:#585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ribbon2 ul li a:hover
+{
+    text-decoration: underline;
+}
+
+#sidebar
+{
+
+    position: absolute;
+    left:0px;
+    top:145px;
+    height: auto;
+    width: 200px;
+    /*margin: 155px 0px 0px 0px;*/
+    background-color:red;
+}
+
+#sidebar ul
+{
+    list-style-type: none;
+    margin:50px 0px 0px 0px;
+    padding:0px;
+
+}
+
+#sidebar ul li
+{
+
+    padding: 12px;
+    margin:5px;
+    background-color:#488214;
+    display:block;
+}
+
+/*#sidebar ul li ul
+{
+
+    padding: 15px;
+    margin:5px;
+    background-color:#66CD00;
+}*/
+
+a:link
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}

@@ -1,0 +1,725 @@
+/* 
+    Document   : credential_css
+    Created on : 24 Aug, 2011, 11:54:20 PM
+    Author     : Kingshuk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+html,body
+{
+    background-color: #585858;
+    font-size: small;
+    font-family: /*arial,verdana,sans-serif;*/Georgia,Times-New-Roman,serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#allcontent
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 975px;
+    height: auto;
+    background-color: white;
+
+}
+
+#allcontent_popup
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: auto;
+    background-color: white;
+
+}
+h2
+{
+    color: #7F3D0C;
+    font-size: 150%;
+    padding: 15px 0px 0px 50px;
+}
+
+
+a:link
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+#sidebar
+{
+
+    /*position: absolute;
+    left:0px;
+    top:0px;*/
+    float: left;
+    height:auto;
+    width: 225px;
+    /*border: 0px 2px 2px 2px;
+    border-collapse: collapse;
+    /*border-color: #66CD00;*/
+    /*border-color:#50A6C2;*/
+    padding: 0px 0px 15px 0px;
+    /*margin: 155px 0px 0px 0px;*/
+    background-color:#ADEAEA;
+    /*border-style:solid;*/
+}
+
+#sidebar ul
+{
+    list-style-type: square;
+    margin:5px 0px 0px 0px;
+    padding:0px;
+
+}
+
+#sidebar ul li
+{
+    list-style-type: square;
+    padding: 12px;
+    margin:1px 16px 1px 10px;
+    display:block;
+}
+
+#sidebar ul li a:link
+{
+    color:#585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sidebar ul li a:visited
+{
+    color:#585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sidebar ul li a:hover
+{
+    text-decoration: underline;
+}
+
+
+.tableinfo
+{
+    /*border:2px solid;
+    border-color:#50AC62;
+    border-collapse:collapse;*/
+    text-align: left;
+    /*width: 75%;*/
+    width: 90%;
+    padding: 5px 5px 5px 0px;
+    margin: 0px 50px 0px 35px;
+}
+
+.tableinfo td
+{
+    padding: 5px;
+    color:  #585858;
+    height: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+    /*background-color:#50AC62;*/
+    /*background-color: #90EE90;*/
+}
+
+.tableinfo th
+{
+    /*background-color:#50AC62;*/
+    background-color: #90EE90;
+    /*background-image: url(/SmartMoneyPlan/images/button.gif);
+    background-repeat: repeat-x;*/
+    color: #488214;
+    height: 22px;
+}
+
+
+#button
+{
+    padding: 0px;
+}
+
+#button ul
+{
+    list-style-type: none;
+    padding: 0px;
+}
+
+#button ul li
+{
+
+    /*background-image : url(/SmartMoneyPlan/images/button.gif);*/
+    background-color: #488214;
+    background-repeat: no-repeat;
+    display:inline;
+    width: auto;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 8px 0px 0px
+}
+
+#button ul li a
+{
+    color: white;
+    font-weight: bold;
+}
+#rightnote
+{
+    position:absolute;
+    /*right:0px;*/
+    top:25px;
+    height:auto;
+    width: 275px;
+    padding:0px 20px 0px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #50A6C2;*/
+}
+
+#rightnote .tableinfo
+{
+    margin: 50px 0px 70px 0px;
+}
+
+
+#ribbon
+{
+    /*position: absolute;*/
+    height:50px;
+    /*left: 0px;
+    top:100px;*/
+    width:100%;
+    background-color: #488214;
+    /*background-image: url('/SmartMoneyPlansDemo/images/navigation_top.jpg');*/
+}
+
+#ribbon h3
+{
+    font-size: 120%;
+    color: white;
+}
+
+#ribbon ul{
+    list-style-type: none;
+    margin: 0px;
+}
+
+#ribbon ul li
+{
+    padding:15px 10px 0px 10px;
+    float:right;
+    height: 30px;
+    display:inline;
+}
+
+#content
+{
+    /*position:absolute;
+    top:175px;
+    /*left:225px;*/
+    /*right: 305px;
+    left: 0px;
+    right: 0px;*/
+    height:auto;
+    padding: 0px 0px 50px 0px;
+    /*margin: 0px 0px 150px 0px;*/
+    background-color: blue;
+}
+
+#ribbon2
+{
+    /*position: absolute;*/
+    height:25px;
+    /*left: 0px;
+    top:150px;*/
+    width:100%;
+    background-color: #66CD00;
+    /*background-image: url('/SmartMoneyPlansDemo/images/navigation_bar.jpg');*/
+}
+
+#ribbon2 h3
+{
+    font-size: 120%;
+    color: white;
+}
+
+#ribbon2 ul{
+    list-style-type: none;
+    /*margin: 0px 0px 5px 0px;*/
+    margin: 0px;
+}
+
+#ribbon2 ul li
+{
+    padding:5px 10px 5px 10px;
+    float:right;
+    height: 15px;
+    display:inline;
+}
+
+#ribbon2 ul li a:link
+{
+    color:#585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ribbon2 ul li a:visited
+{
+    color:#585858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ribbon2 ul li a:hover
+{
+    text-decoration: underline;
+}
+
+#sidebar_helper ul
+{
+    list-style-type: circle;
+    margin:0px;
+    padding:0px;
+
+}
+
+#sidebar_helper ul li
+{
+
+    padding: 2px 15px 2px 25px;
+    margin:2px 16px 2px 10px;
+    /*background-color:#FE8224;*/
+}
+
+#sidebar_helper ul li a:link
+{
+    /*color:black;
+    /*text-decoration: none;*/
+    font-size: 90%;
+    font-weight: normal;
+}
+
+#sidebar_helper ul li a:visited
+{
+    color:#585858;
+    /*text-decoration: none;*/
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+.tablemessage
+{
+    /*float:right;*/
+    border:2px solid;
+    border-color:#50A6C2;
+    border-collapse:collapse;
+    text-align: center;
+    padding: 10px;
+    margin: 100px 0px 50px 0px;
+}
+
+.tablemessage td
+{
+    padding: 5px 5px 5px 18px;
+    color:  #585858;
+    height: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+    background-color: #ADEAEA;
+}
+
+.tablemessage th
+{
+    background-color:#50AC62;
+    color: white;
+    height: 22px;
+}
+
+.highlight{
+    color:#50A6C2;
+    font-weight: bold;
+}
+
+#actual_content
+{
+    padding: 0px 20px 75px 5px;
+    margin:0px 0px 0px 225px;
+    height: auto;
+    /*background-color: yellow;*/
+}
+
+#actual_content h3
+{
+    color:#585858;
+    font-size: 120%;
+    padding: 0px 25px 0px 50px;
+}
+
+#actual_content h2
+{
+    color:#7F3D0C;
+    font-size: 150%;
+}
+
+#actual_content h4
+{
+    color:#585858;
+    font-size: 100%;
+    padding: 0px 25px 0px 50px;
+    
+}
+
+#actual_content a
+{
+    color: #50A6C2;
+    font-weight: bold;
+}
+
+#footer
+{
+    /*position: absolute;
+    bottom: 0px;
+    left:0px;*/
+    clear: both;
+    background-color: #488214;
+    width: 100%;
+    height: 130px;
+}
+
+#footer_text
+{
+    width: 500px;
+    padding: 5px 2px 5px 2px;
+    margin: 5px 2px 5px 2px;
+    height: 10px;
+    color:white;
+    font-weight: bold;
+}
+
+.right_image
+{
+    /*position:absolute;
+    right:0px;
+    top:0px;*/
+    float: right;
+    height:auto;
+    width: 250px;
+    margin: 0px;
+    padding: 0px;
+    /*margin: 0px 40px 0px 0px;
+    /*background-color: yellow;*/
+}
+
+#header_logo
+{
+    float: left;
+    height: 100px;
+    margin: 0px;
+}
+
+#header
+{
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+    width: 100%;
+    height: 100px;
+}
+
+#header ul
+{
+    list-style-type: none;
+    margin: 0px 0px 5px 0px;
+}
+
+#header ul li
+{
+    padding:3px 5px 3px 5px;
+    float:right;
+    height: 10px;
+    display:inline;
+}
+
+#header ul li a:link
+{
+    text-decoration: none;
+    color:#585858;
+    font: 75%;
+    font-weight: normal;
+}
+
+#header ul li a:visited
+{
+    text-decoration: none;
+    color:#585858;
+    font: 75%;
+    font-weight: normal;
+}
+
+#header ul li a:hover
+{
+    text-decoration: underline;
+
+}
+
+#header_link
+{
+    /*position:absolute;
+    right:0px;
+    top:0px;*/
+    float: right;
+    width: 350px;
+    height: 60px;
+    padding:2px 20px 2px 0px;
+    margin: 0px;
+    background-color:  #ADEAEA;
+}
+
+#welcome_message
+{
+    padding: 25px 0px 5px 0px;
+    color: #388E8E;
+    float: right;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#welcome_message a:link
+{
+    color: #585858;
+}
+
+#welcome_message a:visited
+{
+    color: #585858;
+}
+
+
+.table_error
+{
+    border:2px solid;
+    border-color:#FA8072;
+    border-collapse:collapse;
+    text-align: center;
+
+}
+
+.table_error td
+{
+    padding: 5px;
+    color:  #585858;
+    height: 25px;
+    vertical-align: middle;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 105%;
+    /*background-color:#50AC62;*/
+    background-color: #FFCCCC;
+}
+
+.tabledata
+{
+    border:2px solid;
+    border-color:#50AC62;
+    border-collapse:collapse;
+    text-align: center;
+    font-size: 90%;
+    width: 90%;
+    padding: 3px 0px 3px 0px;
+    margin: 25px 25px 0px 50px;
+}
+
+.tabledata td
+{
+    padding: 5px 3px 5px 3px;
+    color:#585858;
+    height: 18px;
+    /*font-weight: bold;*/
+    vertical-align: middle;
+    border: 0px;
+    border-style: solid;
+    border-color: #66CD00;
+    font-family: arial;
+    font-weight: bold;
+    font-size:105%;
+    /*background-color:#66CD00;*/
+}
+
+.tabledata th
+{
+    background-color:#488214;
+    border: 0px;
+    border-style: solid;
+    border-color: #66CD00;
+    color: #585858;
+    height: 22px;
+    font-weight: bold;
+    font-size: 100%;
+    /*width:48%;*/
+    background-color: #90EE90;
+}
+
+.formdata
+{
+    border:2px solid;
+    border-color:#50AC62;
+    border-collapse:collapse;
+    text-align: left;
+    width: 85%;
+    color:  #585858;
+    font-weight: bold;
+
+    padding: 5px 0px 5px 0px;
+    margin: 0px 50px 0px 50px;
+}
+
+legend
+{
+    color:#488214;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.formdata .tableinfo
+{
+    width: 90%;
+}
+
+table_login
+{
+    /*border:2px solid;
+    border-color:#50AC62;
+    border-collapse:collapse;*/
+    text-align: left;
+    width: 100%;
+    padding: 5px 5px 5px 0px;
+    margin: 5px;
+}
+
+.table_login td
+{
+    padding: 5px;
+    color:  #585858;
+    height: 15px;
+    font-weight: normal;
+    font-size: 90%;
+    vertical-align: middle;
+    /*background-color:#50AC62;*/
+    /*background-color: #90EE90;*/
+}
+
+.table_login th
+{
+    /*background-color:#50AC62;*/
+    background-color: #90EE90;
+    /*background-image: url(/SmartMoneyPlan/images/button.gif);
+    background-repeat: repeat-x;*/
+    color: #488214;
+    height: 22px;
+}
+
+.table_login a:link
+{
+    color: #388E8E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table_login a:visited
+{
+    color: #388E8E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table_login a:hover
+{
+    text-decoration: underline;
+}
+
+.table_login #button ul li
+{
+    background-color: #00688B;
+}
+
+.table_login #button ul li a
+{
+    color: white;
+    font-weight: bold;
+}
+
+.green
+{
+    color: #004F00 ;
+}
+
+.numbers
+{
+    font-family: arial;
+}
+
+
+#actual_content_popup
+{
+    padding: 0px 20px 84px 5px;
+    margin:0px 0px 0px 15px;
+    height: auto;
+    /*background-color: yellow;*/
+}
+
+#actual_content_popup h3
+{
+    color:#585858;
+    font-size: 120%;
+    padding: 0px 25px 0px 50px;
+}
+
+#actual_content_popup h2
+{
+    color:#7F3D0C;
+    font-size: 150%;
+}
+
+#actual_content_popup h4
+{
+    color:#585858;
+    font-size: 100%;
+    padding: 0px 25px 0px 50px;
+
+}
+
+#actual_content_popup .tabledata
+{
+    width: 85%;
+}
+
+#actual_content_popup .formdata
+{
+    width: 85%;
+}

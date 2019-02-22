@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>file_upload</title>
+		<meta name="description" content="">
+		<meta name="author" content="Kingshuk Mukherjee">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<style type="text/css">
+			#drop-file {
+				width: 300px;
+				height: 200px;
+				color: Gray;
+				border: 10px dashed #9A9A9A;
+			}
+		</style>
+
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var checkIfFileReaderExists = (window.File && window.FileReader);
+
+				if (!checkIfFileReaderExists) {
+					alert("This browser does not support file API..!!");
+					return;
+				}
+			}
+
+
+			$(document).ready(function() {
+
+				init();
+				
+				$("#file_upload").on("change", function(event) {
+					var theFile = this.files[0];
+
+					console.log(theFile);
+					
+					var totalSize = 0;
+					
+					if(theFile.type!="text/plain"){
+						$("#file-div").html("This is not a text file");
+						return;
+					}
+					
+					var fileReader= new FileReader();
+					
+					//onload event fires after the file reader is done reading the file.
+					fileReader.onload = function(event){
+						var result = $(event.target)[0].result;
+						
+						console.log($(event.target));
+						console.log(result);
+						
+						$("#file-div").html(result);
+					};
+					
+					fileReader.readAsText(theFile);
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>file_upload</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div>
+				<input type="file" name="fileUpload" id="file_upload" multiple="multiple"/>
+				<textarea id="file-div" rows="10" cols="100">
+
+				</textarea>
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Kingshuk Mukherjee
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+html,
+body {
+    font-family: Geneva, Helvetica, sans-serif;
+    font-size: 90%;
+    background-color: aqua;
+}
+h1 {
+    color: brown;
+}
+h2 {
+    align-self: auto;
+}
+p {
+    background-color: aquamarine;
+}

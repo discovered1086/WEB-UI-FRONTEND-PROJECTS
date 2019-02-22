@@ -1,0 +1,7 @@
+<decorators>
+
+    <decorator name="all_pages" page="WEB-INF/decorators/standardtemplate.jsp">
+        <pattern>*.jsp</pattern>
+    </decorator>
+
+</decorators>

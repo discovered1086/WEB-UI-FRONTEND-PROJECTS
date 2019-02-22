@@ -1,0 +1,53 @@
+/* 
+    Document   : special_styles
+    Created on : 12 Feb, 2013, 11:05:17 PM
+    Author     : Kingshuk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.prompt_background{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    opacity:0.65;
+    filter:alpha(opacity=65); /* For IE8 and earlier */
+    z-index: 1001;
+    /*display: none;*/
+}
+
+.prompt_content{
+    position: fixed;
+    z-index: 2001;
+    top: 10%;
+    left: 25%;
+    /*bottom: 15%;*/
+    width: auto;
+    /*display: none;*/
+}
+
+.scrollable_function{
+    width:auto;
+    height:300px;
+    overflow: auto;
+    border: 2px;
+    border-style: solid;
+    border-color: #50AC62;
+}
+
+.scrollable_function .tabledata{
+    margin: 0;
+    border: 0px;
+}
+
+.scrollable_function .tabledata td{
+    height: auto;
+    padding: 6px;
+}
+

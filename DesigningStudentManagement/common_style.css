@@ -1,0 +1,771 @@
+/*
+    Document   : credential_css
+    Created on : 24 Aug, 2011, 11:54:20 PM
+    Author     : Kingshuk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /*background-color: #585858;*/
+    /*background-image: url('/SmartMoneyPlansDemo/images/background1.jpg');*/
+    /*background-color: #50A6C2;*/
+    font-size: small;
+    font-family: /*arial,verdana,sans-serif;*/
+    "Helvetica Neue", Helvetica, Arial, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*height: 100%;*/
+}
+
+#allcontent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    height: auto;
+    /*background-color: white;*/
+}
+
+#allcontent_popup {
+    margin-left: auto;
+    margin-right: auto;
+    width: 575px;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    moz-border-radius: 25px;
+}
+
+h2 {
+    color: #7F3D0C;
+    font-size: 150%;
+    padding: 15px 0px 0px 50px;
+}
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.distance {
+    margin-bottom: 5px;
+}
+
+input {
+    display: block;
+}
+
+/*.navigation {
+    font-size: 140%;
+    float: right;
+    margin-top: -25px;
+}
+
+.navigation .dropdown {
+    display: inline-block;
+    margin: 10px 8px;
+}
+
+.navigation .button .btn {
+    width: 200px;
+}*/
+
+.navigation {
+    font-size: 140%;
+    float: right;
+    margin-top: -25px;
+    margin-right: 200px;
+}
+
+.navigation > ul > li {
+    display: inline-block;
+    margin: 30px 8px;
+    position: relative;
+}
+
+.navigation ul li a:link,
+.navigation ul li a:hover,
+.navigation ul li a:visited {
+    color: #585858;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.sub-navigation {
+    font-size: 90%;
+    position: absolute;
+    top: 30px;
+    min-width: 230px;
+    /* padding: 40px; */
+    height: auto;
+    background-color: rgb(245, 246, 250);
+    z-index: 2;
+    display: none;
+}
+
+
+.sub-navigation ul li {
+    padding: 20px;
+    /* margin:0 0 0 -20px; */
+    width: 100%;
+    list-style-type: none;
+}
+
+
+
+
+.tableinfo {
+    /*border: 2px solid #50AC62;*/
+    background-color: #f5f6fa;
+    border-collapse: collapse;
+    text-align: left;
+    /*width: 75%;*/
+    /*width: 90%;*/
+    width: 650px;
+    min-height: 300px;
+    padding: 5px 25px 20px 25px;
+    /*margin: 0px 20px 0px 35px;*/
+    font-size: 16px;
+    margin-top: 25px;
+    box-shadow: 2px 2px #dcdde1;
+}
+
+.tableinfo td {
+    padding: 15px;
+    color: #585858;
+    height: 25px;
+    font-weight: normal;
+    vertical-align: middle;
+    /*background-color:#50AC62;*/
+    /*background-color: #90EE90;*/
+}
+
+.tableinfo th {
+    /*background-color:#50AC62;*/
+    /*background-color: #90EE90;*/
+    /*background-image: url(/SmartMoneyPlan/images/button.gif);
+    background-repeat: repeat-x;*/
+    color: #488214;
+    height: 22px;
+    padding: 15px;
+    font-size: 150%;
+    font-weight: normal;
+}
+
+.tableinfo .button {
+    width: 100%;
+}
+
+.tableinfo select {
+    width: 200px;
+    height: 25px;
+    font-size: 16px;
+}
+
+.small-tableinfo-box {
+    width: 400px;
+}
+
+.search-box {
+    width: 500px;
+    height: 35px;
+    font-size: 16px;
+    float: left;
+}
+
+.search-box-button {
+    float: left;
+    margin-left: 50px;
+}
+
+.tableinfo input[type=text],
+.tableinfo input[type=password],
+.tabledata input[type=text],
+.text-box {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+}
+
+.info-special {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+#content {
+    /*position:absolute;
+    top:175px;
+    /*left:225px;*/
+    /*right: 305px;
+    left: 0px;
+    right: 0px;*/
+    height: auto;
+    padding: 0px 0px 50px 0px;
+    /*margin: 0px 0px 150px 0px;*/
+    background-color: blue;
+}
+
+.button,
+.button-link {
+    background-color: #40739e;
+    border: none;
+    width: 230px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 1px #888888;
+}
+
+.button:hover,
+.button-link:hover {
+    background-color: #ADEAEA;
+    color: #40739e;
+    box-shadow: 1px 1px #ADEAEA;
+}
+
+.button-link {
+    display: block;
+    padding: 7px 0;
+}
+
+
+.highlight {
+    color: #50A6C2;
+    font-weight: bold;
+}
+
+#actual_content {
+    /*padding: 0px 20px 30px 5px;*/
+    padding: 0;
+    /*margin:0px 0px 0px 225px;*/
+    margin: 0;
+    height: auto;
+    min-height: 200px;
+    /*background-color: #C8C8C8;*/
+    background-color: white;
+}
+
+#actual_content h3 {
+    color: #585858;
+    font-size: 120%;
+    padding: 0px 25px 0px 50px;
+}
+
+#actual_content h2 {
+    color: #7F3D0C;
+    font-size: 150%;
+}
+
+#actual_content h4 {
+    color: #585858;
+    font-size: 100%;
+    padding: 0px 25px 0px 50px;
+
+}
+
+#actual_content a {
+    color: #15317E;
+    font-weight: normal;
+}
+
+#content-body {
+    padding: 5px 30px 30px 60px;
+    float: left;
+    width: 90%;
+}
+
+#content-body-login {
+    padding: 0 0 15px 0;
+    margin-left: 205px;
+    /*height: auto;*/
+    width: auto;
+    background-color: white;
+}
+
+
+#content-body h3 {
+    color: #585858;
+    font-size: 120%;
+    padding: 0px 25px 0px 0px;
+}
+
+#content-body p {
+    padding: 0px 25px 0px 0px;
+}
+
+/*#content-body a{
+    font-weight: bold;
+}*/
+
+#content-body img {
+    margin-right: 20px;
+    float: left;
+}
+
+#content-body #ribbon a {
+    text-decoration: none;
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-images ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.content-images ul li {
+    /*padding: 5px 0px 5px 0px;*/
+    /*margin: 0.5px 0px 0.5px 0px;*/
+    min-height: 80px;
+}
+
+.content-images ul li a {
+    color: white;
+}
+
+#content-body h2 {
+    color: #7F3D0C;
+    font-size: 25px;
+    padding-left: 14px;
+}
+
+#content-body h4 {
+    color: #585858;
+    font-size: 100%;
+    padding: 0px 25px 0px 0px;
+
+}
+
+#content-body a {
+    color: #1f8078;
+    font-weight: bold;
+}
+
+/*************NOTIFICATION MESSAGES*******/
+
+/**********NOTIFICATION MESSAGES**********/
+
+#footer {
+    /*position: absolute;
+    bottom: 0px;
+    left:0px;*/
+    border-top: 2px solid #488214;
+    background-color: #f5f6fa;
+    color: #2f3640;
+    /*background-color: #5F5A59;*/
+    /*background-image: url('/SmartMoneyPlan/images/footer.jpg');*/
+    width: 100%;
+    height: 165px;
+    margin-top: 30px;
+    /*border-radius:10px;*/
+}
+
+.error-message {
+    color: red;
+    padding: 10px;
+    background-color: #ffEEEE;
+    border: 3px solid #ff0000;
+}
+
+.success-message {
+    color: green;
+    padding: 20px;
+    background-color: #D5F5E3;
+    border: 3px solid green;
+    /*width:400px;
+    margin:0 auto;*/
+    /*font-size:140%;*/
+}
+
+#footer_text {
+    font-size: 110%;
+    width: 500px;
+    padding: 5px 2px 5px 2px;
+    margin-top: 30px;
+    height: 10px;
+    color: #2f3640;
+}
+
+#footer_table table {
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    padding: 20px 20px 2px 5px;
+}
+
+#footer_table a:link,
+#footer_table a:visited {
+    color: #2f3640;
+    font-weight: normal;
+}
+
+#header_logo {
+    float: left;
+    height: 110px;
+    margin: 0px;
+}
+
+#header {
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #488214;
+    /*border-radius:10px;*/
+}
+
+
+
+#header_link {
+    /*position:absolute;
+    right:0px;
+    top:0px;*/
+    float: right;
+    width: 350px;
+    height: 60px;
+    padding: 2px 20px 2px 0px;
+    margin: 0px;
+    background-color: #ADEAEA;
+}
+
+#header_link ul {
+    list-style-type: none;
+    margin: 0px 0px 5px 0px;
+}
+
+#header_link ul li {
+    padding: 3px 5px 3px 5px;
+    float: right;
+    height: 10px;
+    display: inline;
+}
+
+#header_link ul li a:link {
+    text-decoration: none;
+    color: #585858;
+    font: 75%;
+    font-weight: normal;
+}
+
+#header_link ul li a:visited {
+    text-decoration: none;
+    color: #585858;
+    font: 75%;
+    font-weight: normal;
+}
+
+#header_link ul li a:hover {
+    text-decoration: underline;
+
+}
+
+#welcome_message {
+    padding: 25px 0px 5px 0px;
+    color: #388E8E;
+    float: right;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#welcome_message a:link {
+    color: #585858;
+}
+
+#welcome_message a:visited {
+    color: #585858;
+}
+
+
+
+
+
+
+legend {
+    color: #488214;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.button-link a:link {
+    text-decoration: none;
+    color: white !important;
+}
+
+.button-link a:hover {
+    text-decoration: none;
+    /*color: #40739e !important;*/
+}
+
+.green {
+    color: #004F00;
+}
+
+.red {
+    color: red;
+}
+
+.numbers {
+    font-family: arial;
+}
+
+.font_bold {
+    font-weight: bold;
+}
+
+
+
+.medium_blocks {
+    width: 40%;
+    height: auto;
+    padding: 10px 10px 10px 20px;
+    margin: 10px;
+    background-color: #BDFCC9;
+    border: 2px solid;
+    border-color: #66CD00;
+    border-collapse: collapse;
+    border-radius: 2px;
+}
+
+/*.inbox_table tr{
+    border: 2px;
+    border-style: solid;
+    border-color: #50AC62;
+}*/
+
+.tabledata {
+    /*border: 2px solid;
+    border-color: #50AC62;
+    border-collapse: collapse;*/
+    text-align: center;
+    font-size: 90%;
+    width: 100%;
+    padding: 3px 0px 3px 0px;
+    border: none !important;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+
+.tabledata td {
+    /*color:#646060;*/
+    color: #585858;
+    height: 18px;
+    /*font-weight: bold;*/
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 120%;
+    word-wrap: break-word;
+    /*text-align: left;*/
+    padding: 10px 3px 10px 8px;
+    /*background-color:#66CD00;*/
+    /*border-bottom: 1px solid #b7b1b1;*/
+    border-collapse: collapse;
+    background-color: #d9eaea;
+}
+
+/*.tabledata tr:nth-of-type(odd){
+    background-color: #E9F8FF;
+}*/
+
+/*.tabledata th {
+    color: #585858;
+    height: 22px;
+    font-size: 120%;
+    padding: 10px 0 10px 8px;
+    /*width:48%;
+    background-color: #ADEAEA;
+    border-collapse: collapse;
+    border: none !important;
+}*/
+
+.tabledata a,
+.tableinfo a {
+    color: #388E8E !important;
+    font-weight: normal !important;
+}
+
+.tabledata .big {
+    color: #7F3D0C;
+    font-size: 120%;
+    padding: 0;
+    font-weight: bold;
+}
+
+.records {
+    display: table;
+    margin: 30px 0;
+    padding: 15px;
+    width: 90%;
+}
+
+/*.records-within {
+    display: table;
+    padding: 10px;
+    width: 100%;
+}
+
+.data-rows {
+    display: table-row;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 3px 0 0 #d9eaea;
+    word-wrap: break-word;
+    height: 50px;
+}
+
+.data-rows-within {
+    display: table-row;
+    padding: 10px;
+    word-wrap: break-word;
+    height: auto;
+}
+
+.data-rows-within .book-title {
+    display: table-cell;
+    font-family: Cambria, sans-serif;
+    color: #7F3D0C;
+    font-size: 190%;
+    padding: 15px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.small-header-within-table {
+    display: table-header;
+    color: #585858;
+    height: 22px;
+    font-size: 80%;
+    padding: 50px 10px 0 0;
+}
+
+.small-data-within-table {
+    display: table-cell;
+    color: #585858;
+    height: 22px;
+    font-size: 70%;
+    padding: 50px 25px 0 10px;
+}
+
+.author {
+    color: #195858;
+    font-size: 150%;
+    font-weight: normal;
+}*/
+
+.data-rows {
+    display: table-row;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 3px 0 0 #d9eaea;
+    word-wrap: break-word;
+    height: 70px;
+}
+
+.records-within {
+    display: table;
+    padding: 10px;
+    width: 100%;
+}
+
+.data-rows-within-main {
+    display: table-row;
+    padding: 10px;
+    word-wrap: break-word;
+    height: 60%;
+    width: 100%;
+}
+
+.data-rows-within-helper {
+    display: table-row;
+    padding: 10px;
+    word-wrap: break-word;
+    height: 40%;
+    width: 100%;
+}
+
+.data-rows-within-main-primary {
+    display: table-cell;
+    width: 65%;
+}
+
+.data-rows-within-main-secondary {
+    display: table-cell;
+    width: 35%;
+}
+
+.book-title {
+    font-family: Cambria, sans-serif;
+    color: #7F3D0C;
+    font-size: 170%;
+    padding: 15px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.supplimentary-data {
+    display: table-cell;
+    padding: 20px 15px 0 5px;
+    width: 100%;
+}
+
+.supplimentary-data li {
+    display: inline-block;
+    color: #585858;
+    font-size: 130%;
+    padding: 0 10px;
+}
+
+.author-title {
+    width: 100%;
+    list-style-type: none;
+    color: #585858;
+    font-size: 110%;
+}
+
+.author {
+    padding-left: 15px;
+}
+
+.success-message-inline {
+    margin: 0 auto;
+}

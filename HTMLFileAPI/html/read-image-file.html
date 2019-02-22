@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>file_upload</title>
+		<meta name="description" content="">
+		<meta name="author" content="Kingshuk Mukherjee">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<style type="text/css">
+			#file-div{
+				margin:20px;
+			}
+		</style>
+
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var checkIfFileReaderExists = (window.File && window.FileReader);
+
+				if (!checkIfFileReaderExists) {
+					alert("This browser does not support file API..!!");
+					return;
+				}
+			}
+
+
+			$(document).ready(function() {
+
+				init();
+				
+				$("#file_upload").on("change", function(event) {
+					var theFile = this.files[0];
+
+					console.log(theFile);
+					
+					var totalSize = 0;
+					
+					//Check to see if this is an image
+					if(!theFile.type.match("image.*")){
+						alert("This is not an image");
+						return;
+					}
+					
+					var fileReader= new FileReader();
+					
+					fileReader.onload=function(event){
+						var img=new Image();
+						
+						//What comes out of the result value is a completely encoded data URL
+						//So it can be directly assigned to the image source.
+						img.src = $(event.target)[0].result;
+						
+						$("#file-div").append(img);
+					};
+					
+					fileReader.readAsDataURL(theFile);
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>file_upload</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div>
+				<input type="file" name="fileUpload" id="file_upload" multiple="multiple"/>
+				<div id="file-div">
+
+				</div>
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Kingshuk Mukherjee
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

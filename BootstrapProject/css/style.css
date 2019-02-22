@@ -1,0 +1,49 @@
+html,
+body {
+    height: 100%;
+    font-family: sans-serif, serif, Helvetica;
+    font-size: medium;
+    background: url('../images/restaurant_background.jpg');
+}
+[class^=col] {
+    border: 1px solid black;
+    font-weight: bold;
+    height: auto;
+}
+.heading {
+    font-size: 150%;
+}
+.container {
+    height: auto;
+    width: 1024px;
+    background-color: #CCCCCC;
+}
+.container-fluid {
+    height: auto;
+    background-color: #CCCCCC;
+}
+.container-fluid .row {
+    background-color: aliceblue;
+}
+.row {
+    padding: 12px;
+    margin: 0 10px;
+    height: auto;
+    background-color: darkgray;
+    border: 1px solid grey;
+}
+
+/*.col-sm-3 {
+    background-color: white;
+    height: 100px;
+    /*margin-right:10px;
+}
+.col-sm-9 {
+    background-color: aliceblue;
+    height: 300px;
+    /*margin-right:10px;
+}*/
+
+#roger-image {
+    width: 200px;
+}
